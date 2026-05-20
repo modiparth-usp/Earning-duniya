@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCCY5L7Z9G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HCCY5L7Z9G');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IX7 & IN7 Premium Hub</title>
+
+<title>IX7 & IN7 Premium Gaming Hub</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -26,168 +18,186 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#070b16;
+background:#0b0b0f;
 color:white;
 overflow-x:hidden;
 }
 
 header{
-padding:40px 20px;
+padding:25px;
 text-align:center;
-background:linear-gradient(135deg,#111827,#0f172a);
+background:#111827;
+box-shadow:0 0 20px #000;
+}
+
+.top-logo{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+margin-bottom:20px;
+}
+
+.top-logo img{
+width:90px;
+height:90px;
+border-radius:50%;
+box-shadow:0 0 25px #ff003c;
 }
 
 .logo{
-font-size:42px;
+font-size:34px;
 font-weight:700;
-background:linear-gradient(90deg,#facc15,#f97316,#7c3aed);
+background:linear-gradient(90deg,#ff003c,#ff7b00);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
 
 .tagline{
 margin-top:10px;
-font-size:18px;
 color:#cbd5e1;
-}
-
-.telegram-btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:#22c55e;
-color:white;
-text-decoration:none;
-border-radius:14px;
-font-weight:600;
+font-size:16px;
 }
 
 .container{
 width:92%;
-max-width:1300px;
+max-width:900px;
 margin:auto;
-padding:50px 0;
+padding:30px 0;
 }
 
-.section-title{
-font-size:32px;
-margin-bottom:30px;
-text-align:center;
-background:linear-gradient(90deg,#a855f7,#3b82f6);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.balance-post{
+margin-bottom:35px;
 }
 
-.games{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
-
-.card{
-background:#111827;
-border-radius:24px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
+.balance-post img{
 width:100%;
-height:auto;
-display:block;
+border-radius:20px;
+box-shadow:0 0 25px #ff003c55;
 }
 
-.content{
-padding:22px;
+.game-box{
+background:#111827;
+padding:20px;
+border-radius:20px;
+margin-bottom:35px;
+box-shadow:0 0 20px #00000066;
 }
 
-.content h2{
-font-size:28px;
+.game-top{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.game-logo{
+width:120px;
+height:120px;
+border-radius:20px;
+object-fit:cover;
+box-shadow:0 0 20px #ff003c;
+}
+
+.game-info h2{
+font-size:30px;
 margin-bottom:12px;
 }
 
-.content p{
-color:#cbd5e1;
-line-height:1.7;
-font-size:15px;
-}
-
-.features{
-margin-top:15px;
-}
-
-.features li{
-list-style:none;
+.game-info p{
 margin-bottom:8px;
+color:#cbd5e1;
 }
 
-.btns{
+.buttons{
 display:flex;
 flex-direction:column;
-gap:12px;
+gap:15px;
 margin-top:25px;
 }
 
-.btn{
-padding:14px;
+.download-btn{
+padding:15px;
+background:#10b981;
 text-align:center;
-text-decoration:none;
 border-radius:14px;
-font-weight:600;
+text-decoration:none;
 color:white;
+font-weight:bold;
+font-size:18px;
 }
 
-.register{
-background:linear-gradient(90deg,#2563eb,#7c3aed);
-}
-
-.bonus{
-background:linear-gradient(90deg,#f59e0b,#f97316);
-}
-
-.apk{
-background:linear-gradient(90deg,#22c55e,#16a34a);
-}
-
-.notice{
-margin-top:60px;
-background:#111827;
-padding:30px;
-border-radius:24px;
+.telegram-btn{
+padding:15px;
+background:#2563eb;
 text-align:center;
+border-radius:14px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+font-size:18px;
 }
 
-.notice h2{
+.rating{
+margin-top:20px;
+font-size:24px;
+color:#facc15;
+}
+
+.description{
+margin-top:25px;
+}
+
+.description h3{
+font-size:26px;
 margin-bottom:15px;
-font-size:30px;
 }
 
-.notice p{
-color:#cbd5e1;
+.description p{
 line-height:1.8;
+color:#cbd5e1;
+}
+
+.bottom-download{
+position:fixed;
+bottom:15px;
+left:50%;
+transform:translateX(-50%);
+background:linear-gradient(90deg,#ff9900,#ff003c);
+padding:16px 35px;
+border-radius:50px;
+font-weight:bold;
+font-size:18px;
+box-shadow:0 0 25px #ff003c;
+z-index:999;
+}
+
+.bottom-download a{
+color:white;
+text-decoration:none;
 }
 
 footer{
-margin-top:70px;
-background:#020617;
+margin-top:50px;
 padding:25px;
 text-align:center;
+background:#020617;
 color:#94a3b8;
 }
 
-@media(max-width:768px){
+@media(max-width:700px){
 
-.logo{
-font-size:32px;
+.game-top{
+flex-direction:column;
+text-align:center;
 }
 
-.section-title{
-font-size:26px;
+.game-logo{
+width:140px;
+height:140px;
+}
+
+.logo{
+font-size:28px;
 }
 
 }
@@ -199,388 +209,36 @@ font-size:26px;
 
 <header>
 
+<div class="top-logo">
+
+<img src="https://i.ibb.co/rf5cHc36/in7logo.png">
+
+<img src="https://i.ibb.co/KcKLjndZ/ix7logo.png">
+
+</div>
+
 <div class="logo">
- IX7 & IN7 Premium Hub 
+IX7 & IN7 Premium Hub
 </div>
 
 <p class="tagline">
-Best Referral Rewards • Instant Bonus • Premium Slot Gaming Platform
+Best Slot Games • Referral Bonus • VIP Gaming
 </p>
-
-<a class="telegram-btn"
-href="https://t.me/in7byparth"
-target="_blank">
-Join Telegram
-</a>
 
 </header>
 
 <div class="container">
 
-<h1 class="section-title">
-Top Slot Gaming Platforms
-</h1>
+<!-- 47000 POST -->
 
-<div class="games">
+<div class="balance-post">
 
-<!-- IX7 CARD -->
-
-<div class="card">
-
-<img src="https://i.ibb.co/3YP35n6R/ix7.jpg">
-
-<div class="content">
-
-<h2>IX7 Game</h2>
-
-<p>
-Play JILI & Slot Games with premium rewards and daily referral bonuses.
-</p>
-
-<ul class="features">
-<li> Instant Register Bonus</li>
-<li> Fast Withdraw</li>
-<li> JILI Slot Games</li>
-<li> VIP Gaming Experience</li>
-</ul>
-
-<div class="btns">
-
-<a class="btn register"
-href="https://share.ix7game.org/share/agent/AS6JSE2X"
-target="_blank">
-Register Now
-</a>
-
-<a class="btn bonus"
-href="https://share.ix7game.org/share/agent/AS6JSE2X"
-target="_blank">
-Claim Bonus
-</a>
-
-<a class="btn apk"
-href="https://share.ix7game.org/share/agent/AS6JSE2X"
-target="_blank">
-Download APK
-</a>
+<img src="https://i.ibb.co/TDRTJTn5/47000post.jpg">
 
 </div>
 
-</div>
+<!-- IN7 -->
 
-</div>
-
-<!-- IN7 CARD -->
-
-<div class="card">
-
-<img src="https://i.ibb.co/PZfn1Sp0/in7.jpg">
-
-<div class="content">
-
-<h2>IN7 Game</h2>
-
-<p>
-Enjoy exciting slot games and earn referral commissions instantly.
-</p>
-
-<ul class="features">
-<li> Easy Registration</li>
-<li> Referral Income</li>
-<li> Instant Bonus</li>
-<li> Trusted Platform</li>
-</ul>
-
-<div class="btns">
-
-<a class="btn register"
-href="https://share.in7game.org/share/agent/SS6BEVSR?data=eyJtIjoxLCJsYW5nIjoiZW4iLCJpZCI6MX0="
-target="_blank">
-Register Now
-</a>
-
-<a class="btn bonus"
-href="https://share.in7game.org/share/agent/SS6BEVSR?data=eyJtIjoxLCJsYW5nIjoiZW4iLCJpZCI6MX0="
-target="_blank">
-Claim Bonus
-</a>
-
-<a class="btn apk"
-href="https://share.in7game.org/share/agent/SS6BEVSR?data=eyJtIjoxLCJsYW5nIjoiZW4iLCJpZCI6MX0="
-target="_blank">
-Download APK
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="notice">
-
-<h2>
- Premium Gaming Experience 
-</h2>
-
-<p>
-Join our Telegram channel for latest bonuses, updates and VIP support.
-</p>
-
-</div>
-
-</div>
-
-<footer>
-
-© 2026 IX7 & IN7 Premium Hub | All Rights Reserved
-<!-- FLOATING BUTTONS -->
-
-<style>
-
-.floating-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#22c55e;
-color:white;
-padding:15px 18px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-z-index:999;
-box-shadow:0 0 20px #22c55e;
-animation:glow 1.5s infinite alternate;
-}
-
-@keyframes glow{
-from{
-box-shadow:0 0 10px #22c55e;
-}
-to{
-box-shadow:0 0 30px #22c55e;
-}
-}
-
-.popup{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.8);
-justify-content:center;
-align-items:center;
-z-index:1000;
-}
-
-.popup-content{
-background:#111827;
-padding:30px;
-border-radius:20px;
-width:90%;
-max-width:350px;
-text-align:center;
-box-shadow:0 0 30px #7c3aed;
-animation:popupAnim 0.4s ease;
-}
-
-@keyframes popupAnim{
-from{
-transform:scale(0.7);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
-}
-
-.popup-content h2{
-margin-bottom:15px;
-color:#facc15;
-}
-
-.popup-content input{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:none;
-border-radius:10px;
-}
-
-.popup-content button{
-width:100%;
-padding:12px;
-border:none;
-border-radius:10px;
-background:linear-gradient(90deg,#2563eb,#7c3aed);
-color:white;
-font-weight:bold;
-margin-top:10px;
-}
-
-.close{
-margin-top:15px;
-display:inline-block;
-color:#f87171;
-cursor:pointer;
-}
-
-.spin-wheel{
-margin-top:30px;
-padding:25px;
-background:#111827;
-border-radius:20px;
-text-align:center;
-box-shadow:0 0 25px #2563eb55;
-}
-
-.spin-btn{
-margin-top:20px;
-padding:14px 30px;
-background:linear-gradient(90deg,#f59e0b,#f97316);
-border:none;
-border-radius:14px;
-color:white;
-font-weight:bold;
-font-size:18px;
-cursor:pointer;
-animation:glow 1.2s infinite alternate;
-}
-
-.neon-text{
-font-size:32px;
-font-weight:bold;
-text-align:center;
-margin-top:40px;
-color:#fff;
-text-shadow:
-0 0 5px #fff,
-0 0 10px #7c3aed,
-0 0 20px #7c3aed,
-0 0 40px #2563eb;
-animation:flicker 1.5s infinite alternate;
-}
-
-@keyframes flicker{
-0%{
-opacity:1;
-}
-100%{
-opacity:0.8;
-}
-}
-
-</style> .game-box{
-background:#111827;
-padding:20px;
-border-radius:20px;
-margin-top:40px;
-box-shadow:0 0 20px #00000055;
-}
-
-.game-top{
-display:flex;
-gap:20px;
-align-items:center;
-}
-
-.game-logo{
-width:130px;
-height:130px;
-border-radius:20px;
-object-fit:cover;
-}
-
-.game-info h2{
-font-size:30px;
-margin-bottom:10px;
-}
-
-.game-info p{
-margin-bottom:8px;
-color:#cbd5e1;
-}
-
-.buttons{
-display:flex;
-gap:15px;
-margin-top:25px;
-}
-
-.download-btn{
-flex:1;
-padding:15px;
-background:#10b981;
-text-align:center;
-border-radius:12px;
-color:white;
-font-weight:bold;
-text-decoration:none;
-}
-
-.telegram-btn2{
-flex:1;
-padding:15px;
-background:#2563eb;
-text-align:center;
-border-radius:12px;
-color:white;
-font-weight:bold;
-text-decoration:none;
-}
-
-.rating{
-margin-top:25px;
-font-size:24px;
-color:#facc15;
-}
-
-.description{
-margin-top:30px;
-}
-
-.description h3{
-font-size:28px;
-margin-bottom:15px;
-}
-
-.description p{
-line-height:1.8;
-color:#cbd5e1;
-}
-
-<!-- APK POPUP -->
-  
-
-<!-- SPIN WHEEL -->
-
-<div class="spin-wheel">
-
-<h2>
-🎰 Spin & Win Bonus
-</h2>
-
-<p>
-Spin now and get exciting rewards.
-</p>
-
-<button class="spin-btn"
-onclick="spinBonus()">
-SPIN NOW
-</button>
-
-<h3 id="bonusResult"
-style="margin-top:20px;color:#22c55e;">
-</h3>
-
-</div>
-
-<!-- NEON TEXT -->
 <div class="game-box">
 
 <div class="game-top">
@@ -610,24 +268,22 @@ src="https://i.ibb.co/rf5cHc36/in7logo.png">
 href="https://share.in7game.org/share/agent/SS6BEVSR?data=eyJtIjoxLCJsYW5nIjoiZW4iLCJpZCI6MX0="
 target="_blank">
 
-DOWNLOAD
+DOWNLOAD APK
 
 </a>
 
-<a class="telegram-btn2"
+<a class="telegram-btn"
 href="https://t.me/in7byparth"
 target="_blank">
 
-TELEGRAM
+JOIN TELEGRAM
 
 </a>
 
 </div>
 
 <div class="rating">
-
 ⭐⭐⭐⭐☆ 4.1/5
-
 </div>
 
 <div class="description">
@@ -636,70 +292,97 @@ TELEGRAM
 
 <p>
 
-Play premium slot & JILI games with exciting rewards and referral bonuses.
+Play premium slot games and earn exciting referral rewards with IN7 Game.
 
 </p>
 
 </div>
 
 </div>
-<div class="neon-text">
-🔥 PREMIUM SLOT GAMING 🔥
+
+<!-- IX7 -->
+
+<div class="game-box">
+
+<div class="game-top">
+
+<img class="game-logo"
+src="https://i.ibb.co/KcKLjndZ/ix7logo.png">
+
+<div class="game-info">
+
+<h2>IX7 Game</h2>
+
+<p><b>Updated:</b> Today</p>
+
+<p><b>Size:</b> 52MB</p>
+
+<p><b>Version:</b> Latest</p>
+
+<p><b>Downloads:</b> 510K+</p>
+
 </div>
 
-<!-- FLOATING BUTTON -->
+</div>
 
-<a href="#"
-class="floating-btn"
-onclick="openPopup()">
-APK
+<div class="buttons">
+
+<a class="download-btn"
+href="https://share.ix7game.org/share/agent/AS6JSE2X"
+target="_blank">
+
+DOWNLOAD APK
+
 </a>
 
-<!-- VIP BUTTON -->
+<a class="telegram-btn"
+href="https://t.me/in7byparth"
+target="_blank">
 
-<a href="#"
-class="floating-btn"
-style="bottom:90px;background:#7c3aed;"
-onclick="openVip()">
-VIP
+JOIN TELEGRAM
+
 </a>
 
-<script>
+</div>
 
-function openPopup(){
-document.getElementById('apkPopup').style.display='flex';
-}
+<div class="rating">
+⭐⭐⭐⭐⭐ 4.8/5
+</div>
 
-function closePopup(){
-document.getElementById('apkPopup').style.display='none';
-}
+<div class="description">
 
-function openVip(){
-document.getElementById('vipPopup').style.display='flex';
-}
+<h3>Description</h3>
 
-function closeVip(){
-document.getElementById('vipPopup').style.display='none';
-}
+<p>
 
-function spinBonus(){
+Experience VIP JILI slot gaming with premium bonuses and instant rewards.
 
-let rewards=[
-'₹50 Bonus',
-'₹100 Bonus',
-'Free Spin',
-'VIP Reward',
-'₹500 Jackpot'
-];
+</p>
 
-let randomReward=
-rewards[Math.floor(Math.random()*rewards.length)];
+</div>
 
-document.getElementById('bonusResult').innerHTML=
-'You Won: '+randomReward;
+</div>
 
-}
+</div>
 
-</script>
+<!-- FLOATING DOWNLOAD -->
+
+<div class="bottom-download">
+
+<a href="https://t.me/in7byparth"
+target="_blank">
+
+🔥 NEW YONO DOWNLOAD
+
+</a>
+
+</div>
+
+<footer>
+
+© 2026 IX7 & IN7 Premium Gaming Hub
+
+</footer>
+
 </body>
-  </html>
+</html>
