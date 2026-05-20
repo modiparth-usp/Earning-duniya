@@ -475,60 +475,87 @@ opacity:0.8;
 }
 }
 
-</style>
+</style> .game-box{
+background:#111827;
+padding:20px;
+border-radius:20px;
+margin-top:40px;
+box-shadow:0 0 20px #00000055;
+}
+
+.game-top{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.game-logo{
+width:130px;
+height:130px;
+border-radius:20px;
+object-fit:cover;
+}
+
+.game-info h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.game-info p{
+margin-bottom:8px;
+color:#cbd5e1;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+margin-top:25px;
+}
+
+.download-btn{
+flex:1;
+padding:15px;
+background:#10b981;
+text-align:center;
+border-radius:12px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
+.telegram-btn2{
+flex:1;
+padding:15px;
+background:#2563eb;
+text-align:center;
+border-radius:12px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
+.rating{
+margin-top:25px;
+font-size:24px;
+color:#facc15;
+}
+
+.description{
+margin-top:30px;
+}
+
+.description h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.description p{
+line-height:1.8;
+color:#cbd5e1;
+}
 
 <!-- APK POPUP -->
-
-<div class="popup" id="apkPopup">
-
-<div class="popup-content">
-
-<h2>Download APK</h2>
-
-<p>Get latest premium gaming APK now.</p>
-
-<a href="https://share.ix7game.org/share/agent/AS6JSE2X"
-target="_blank">
-
-<button>
-Download Now
-</button>
-
-</a>
-
-<div class="close"
-onclick="closePopup()">
-Close
-</div>
-
-</div>
-
-</div>
-
-<!-- VIP LOGIN -->
-
-<div class="popup" id="vipPopup">
-
-<div class="popup-content">
-
-<h2>VIP Login</h2>
-
-<input type="text" placeholder="Username">
-
-<input type="password" placeholder="Password">
-
-<button>
-Login VIP
-</button>
-
-<div class="close"
-onclick="closeVip()">
-Close
-</div>
-
-</div>
-
-</div>
+  
 
 <!-- SPIN WHEEL -->
 
@@ -554,7 +581,68 @@ style="margin-top:20px;color:#22c55e;">
 </div>
 
 <!-- NEON TEXT -->
+<div class="game-box">
 
+<div class="game-top">
+
+<img class="game-logo"
+src="https://i.ibb.co/rf5cHc36/in7logo.png">
+
+<div class="game-info">
+
+<h2>IN7 Game</h2>
+
+<p><b>Updated:</b> Today</p>
+
+<p><b>Size:</b> 48MB</p>
+
+<p><b>Version:</b> Latest</p>
+
+<p><b>Downloads:</b> 425K+</p>
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a class="download-btn"
+href="https://share.in7game.org/share/agent/SS6BEVSR?data=eyJtIjoxLCJsYW5nIjoiZW4iLCJpZCI6MX0="
+target="_blank">
+
+DOWNLOAD
+
+</a>
+
+<a class="telegram-btn2"
+href="https://t.me/in7byparth"
+target="_blank">
+
+TELEGRAM
+
+</a>
+
+</div>
+
+<div class="rating">
+
+⭐⭐⭐⭐☆ 4.1/5
+
+</div>
+
+<div class="description">
+
+<h3>Description</h3>
+
+<p>
+
+Play premium slot & JILI games with exciting rewards and referral bonuses.
+
+</p>
+
+</div>
+
+</div>
 <div class="neon-text">
 🔥 PREMIUM SLOT GAMING 🔥
 </div>
@@ -615,17 +703,3 @@ document.getElementById('bonusResult').innerHTML=
 </script>
 </body>
   </html>
-<style> .top-logo{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:25px;
-margin-top:20px;
-}
-
-.top-logo img{
-width:90px;
-height:90px;
-border-radius:50%;
-box-shadow:0 0 25px #ff003c;
-}
